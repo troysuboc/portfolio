@@ -1,0 +1,413 @@
+body {
+	margin: 0 0 0 0;
+	width: 100%;
+	background-image: url('img/cover2.png');
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+div#maintitle1 {
+	padding-top: 70px;
+	padding-bottom: 40px;
+	height: 120px;
+	background-color: rgba(0, 0, 0, 0.5)
+	
+}
+
+div#footer {
+	background-color: rgb(9, 36, 37);
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 25px;
+}
+
+.group	{
+	padding-top: 80px;
+	display: flex;
+}
+
+
+div#container1 {
+	width: 60%;
+	height: 700px;	
+	margin-left: 100px;
+}
+
+div#container2 {
+	margin-left: -5px;
+	margin-right: 100px;
+	color: white;
+	height: 645px;
+	width: 40%;
+	border-style: none;
+	padding-left: 50px;
+	padding-right: 12px;
+}
+
+span#footertext {
+	font-size: 16px;
+	font-family: 'IBM PLex Sans', sans-serif;
+	font-weight: 400;
+	color: white;
+}
+
+.cast {
+	margin-right: 10px;
+	margin-bottom: 7px;
+	padding-top: 270px;
+	text-align: right;
+	font-family: 'IBM PLex Sans', sans-serif;
+	width: 18%;
+	height: 220px;
+	color: rgb(234, 239, 255);
+	margin-top: 8px;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 3px;
+	border-color: rgb(46, 46, 46);
+}
+
+
+button#a1 {
+	background-image: url('img/actors/hf.png');
+	background-size: cover;
+	background-position: 37%;
+}
+
+button#a2 {
+	background-image: url('img/actors/ad.png');
+	background-size: cover;
+	background-position: 38%;
+}
+
+button#a3 {
+	background-image: url('img/actors/rg.png');
+	background-size: cover;
+	background-position: 37%;
+}
+
+button#a4 {
+	background-image: url('img/actors/sh.png');
+	background-size: cover;
+	background-position: 40%;
+}
+
+button#a5 {
+	background-image: url('img/actors/jl.png');
+	background-size: cover;
+	background-position: 40%;
+}
+
+button#a6 {
+	background-image: url('img/actors/rw.png');
+	background-size: cover;
+	background-position: 40%;
+}
+
+button#a7 {
+	background-image: url('img/actors/eo.png');
+	background-size: cover;
+	background-position: 39%;
+}
+
+button#a8 {
+	background-image: url('img/actors/cj.png');
+	background-size: cover;
+	background-position: 33%;
+}
+
+button#a9 {
+	background-image: url('img/actors/db.png');
+	background-size: cover;
+	background-position: 30%;
+}
+
+button#a0 {
+	background-image: url('img/actors/md.png');
+	background-size: cover;
+	background-position: 35%;
+}
+
+
+button#a1:hover {
+	cursor: pointer;
+	transition: all .20s ease-in-out;
+	background-image: url('img/actors/hf2.png');
+	background-size: cover;
+	background-position: 40%;
+	border-width: 1px;
+	border-radius: 3px;
+	border-color: rgb(255, 252, 96);
+
+}
+
+button#a2:hover {
+	cursor: pointer;
+	transition: all .20s ease-in-out;
+	background-image: url('img/actors/ad2.png');
+	background-size: cover;
+	background-position: 40%;
+	border-width: 1px;
+	border-radius: 3px;
+	border-color: rgb(255, 252, 96);
+
+}
+
+button#a3:hover {
+	cursor: pointer;
+	transition: all .20s ease-in-out;
+	background-image: url('img/actors/rg2.png');
+	background-size: cover;
+	background-position: 40%;
+	border-width: 1px;
+	border-radius: 3px;
+	border-color: rgb(255, 252, 96);
+
+}
+
+button#a4:hover {
+	cursor: pointer;
+	transition: all .20s ease-in-out;
+	background-image: url('img/actors/sh2.png');
+	background-size: cover;
+	background-position: 43%;
+	border-width: 1px;
+	border-radius: 3px;
+	border-color: rgb(255, 252, 96);
+
+}
+
+button#a5:hover {
+	cursor: pointer;
+	transition: 0.3s;
+	background-image: url('img/actors/jl2.png');
+	background-size: cover;
+	background-position: 42%;
+	border-width: 1px;
+	border-radius: 3px;
+	border-color: rgb(255, 252, 96);
+
+}
+
+button#a6:hover {
+	cursor: pointer;
+	transition: 0.3s;
+	background-image: url('img/actors/rw2.png');
+	background-size: cover;
+	background-position: 43%;
+	border-width: 1px;
+	border-radius: 3px;
+	border-color: rgb(255, 252, 96);
+
+}
+
+button#a7:hover {
+	cursor: pointer;
+	transition: 0.3s;
+	background-image: url('img/actors/eo2.png');
+	background-size: cover;
+	background-position: 42%;
+	border-width: 1px;
+	border-radius: 3px;
+	border-color: rgb(255, 252, 96);
+
+}
+
+button#a8:hover {
+	cursor: pointer;
+	transition: 0.3s;
+	background-image: url('img/actors/cj2.png');
+	background-size: cover;
+	background-position: 36%;
+	border-width: 1px;
+	border-radius: 3px;
+	border-color: rgb(255, 252, 96);
+
+}
+
+button#a9:hover {
+	cursor: pointer;
+	transition: 0.3s;
+	background-image: url('img/actors/db2.png');
+	background-size: cover;
+	background-position: 33%;
+	border-width: 1px;
+	border-radius: 3px;
+	border-color: rgb(255, 252, 96);
+
+}
+
+button#a0:hover {
+	cursor: pointer;
+	transition: 0.3s;
+	background-image: url('img/actors/md2.png');
+	background-size: cover;
+	background-position: 37%;
+	border-width: 1px;
+	border-radius: 3px;
+	border-color: rgb(255, 252, 96);
+
+}
+
+
+img#logo {
+	height: 90px;
+}
+
+div#carousell {
+	margin-top: -50px;
+	height: 1650px;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+h1#head {
+	font-size: 18px;
+	font-weight: 400;
+	color: white;
+	font-family: 'IBM Plex Sans';
+	letter-spacing: 1px;
+	margin-top: -22px;
+}
+
+
+h3#quote {
+	padding-top: 20px;
+	color: rgb(255, 252, 96);
+	font-size: 45px;
+	line-height: 60px;
+	letter-spacing: 1px;
+	font-family: ibm plex sans;
+	text-shadow: 1px 1px 5px rgba(255, 252, 96, 0.671);
+}
+
+
+p#synopsis {
+	text-align: justify;
+	font-size: 20px;
+	line-height: 35px;
+	letter-spacing: 1px;
+	font-family: ibm plex sans;
+}
+
+
+p#contents {
+	text-align: justify;
+	font-size: 20px;
+	line-height: 30px;
+	letter-spacing: 1px;
+	font-family: ibm plex sans;
+}
+
+
+h2#charactername {
+	padding-top: 60px;
+	font-size: 30px;
+	font-family: ibm plex sans;
+	font-weight: 700;
+}
+
+h4#character {
+	color: rgb(255, 252, 96);
+	letter-spacing: 2px;
+	font-size: 15px;
+	font-family: ibm plex sans;
+}
+
+h5#slider-title {
+	font-family: ibm plex sans;
+	padding-top: 20px;
+	color: aliceblue;
+	font-size: 30px;
+}
+
+@keyframes slide {
+	from {
+		transform: translateX(0);
+	}
+	to {
+		transform: translateX(-100%);
+	}
+}
+
+.img {
+	white-space: nowrap;
+	padding-top: 25px;
+	overflow: hidden;
+	position: relative;
+
+}
+
+.img:before,
+.img:after {
+	position: absolute;
+	top: 0;
+	width: 150px;
+	height: 1000px;
+	content: "";
+	z-index: 2;
+}
+
+.img:before {
+	background: linear-gradient(to left, rgba(0, 0, 0, 0), rgb(0, 0, 0));
+	left: 0;
+}
+
+.img:after {
+	background: linear-gradient(to right, rgba(0, 0, 0, 0), rgb(0, 0, 0));
+	right: 0;
+}
+
+
+.img-slide {
+	display: inline-block;
+	animation: 130s slide infinite linear;
+}
+
+.img-slide img{
+	margin-right: 13px;
+	height: 450px;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 10px;
+	border-color: rgb(46, 46, 46);
+}
+
+.dis {
+	padding-top: 50px;
+}
+
+.dis-logo img {
+	padding-top: 50px;
+	height: 50px;
+	margin-right: 30px;
+	margin-bottom: 50px;
+}
+
+.critics {
+	letter-spacing: 2px;
+	font-family: ibm plex sans;
+	font-size: 20px;
+	color: rgb(255, 252, 96);
+	margin-bottom: -15px;
+	text-shadow: 1px 1px 5px rgba(255, 252, 96, 0.671);
+
+}
+
+.reviews {
+	line-height: 30px;
+	letter-spacing: 1px;
+	font-family: ibm plex sans;
+	color: white;
+	text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.781);
+}
+
+div#bottom {
+	text-align: justify;
+	text-align-last: center;
+	padding-top: 5px;
+	width: 45%;
+}
+
+div#line {
+	padding-top: 60px;
+}

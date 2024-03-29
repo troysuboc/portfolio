@@ -1394,7 +1394,7 @@ input:focus {
 }
 
 button#contact-submit {
-    margin-right: -4px;
+    margin-right: -1px;
     float: right;
     height: 56px;
     margin-top: 14px;

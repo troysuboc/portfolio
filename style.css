@@ -1,0 +1,1611 @@
+body {
+    background-image: url(img/bg.png);
+    background-attachment: fixed;
+    background-color: rgb(37, 37, 37);
+    margin: 100px 50px 0px 50px;
+}
+
+
+div#portrait {
+    display: block;
+}
+
+div#landscape {
+    display: none;
+
+}
+
+
+
+a {
+    text-decoration: none;
+}
+
+
+div#portrait-nav {
+    float: right;
+    position: fixed;
+    width: 100%;
+    height: 55px;
+    top:0;
+    right:0;
+    z-index: 1;
+    background-color: #252525;
+}
+
+.portrait-nav-pop {
+    margin-right: -1px;
+    float: right;
+    position: fixed;
+    width: 150px;
+    height: 100%;
+    top:0;
+    right:-450px;
+    z-index: 1;
+    background-color: rgba(26, 26, 26, 0.884);
+    padding: 15px;
+    transition: .3s ease;
+
+}
+
+.portrait-nav-pop.active {
+    right: 0;
+}
+
+
+
+
+
+.burger {
+    cursor: pointer;
+    width: 51px;
+    height: 100%;
+    background-color: #252525;
+    float: right;
+    transition: .2s ease;
+    color: #00ffd5;
+}
+
+.burger.active {
+    background-color: #00ffd5;
+    color: #252525;
+}
+
+h2#burger-icon {
+    text-align: center;
+    margin-top: 11px;
+
+}
+
+img#logo {
+    position: fixed;
+    margin-left: 3px;
+    margin-top: 8px;
+    width: 40px;
+}
+
+
+
+ul {
+    
+    transform: translateY(150%);
+    position: absolute;
+    list-style-type: none;
+}
+
+li {
+    color: white;
+    font-family: barlow;
+    margin-bottom: 40px;
+
+
+}
+
+
+
+
+
+h3#sub {
+    font-size: 18px;
+    font-family: barlow;
+    color: #00ffd5;
+    letter-spacing: 5px;
+    font-weight: 400;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+div#navigation {
+    display: none;
+    }
+
+
+h1#name {
+    font-size: 35px;
+    color: rgb(0, 255, 213);
+    font-family: barlow;
+    letter-spacing: 10px;
+    margin-top: -25px;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+div#home {
+    width: 100%;
+    background-color: #00ffd5;
+    height: 200px;
+    margin-top: -32px;
+    
+}
+
+.slide {
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.slide-img {
+    display: inline-block;
+    animation: 20s slide infinite linear;
+    padding-top: 70px;
+}
+
+img#wel {
+    height: 50px;
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }   
+}
+
+
+h5#disc {
+    display: none;
+}
+
+.faux {
+    margin-top: -1px;
+    height: 50px;
+    background-color: rgb(26, 26, 26);
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+
+.pgm {
+    font-size: 15px;
+    float: left;
+    font-family: barlow;
+    font-weight: 200;
+    color: white;
+    margin-left: 15px;
+}
+
+div#about {
+    height: 90%;
+    background-color: rgb(32, 32, 32);
+    padding: 25px;
+
+}
+
+
+div#pic {
+    background-image: url('img/portrait.png');
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 200px;
+    padding-bottom: 3px;
+    background-color: rgb(0, 255, 213);
+    border-style: solid;
+    border-width: 11px;
+    border-color: rgb(0, 255, 213);
+    cursor: pointer;
+}
+
+
+div#info-change {
+    display: flex;
+}
+
+div#head1 {
+    margin-top: 15px;
+    margin-right: 15px;
+    padding: 10px;
+    width: 50%;
+    background-color:rgb(0, 255, 213);
+}
+
+div#head2 {
+    margin-top: 15px;
+    padding: 10px;
+    width: 50%;
+    background-color:rgb(0, 255, 213);
+}
+
+
+
+span#titles {
+    font-size: 12px;
+    color: rgb(32, 32, 32);
+    font-family: barlow;
+    font-weight: 700;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+p#intro-text {
+    margin-top: 15px;
+    display: block;
+    color: white;
+    font-size: 13px;
+    font-family: barlow;
+    font-weight: 300;
+    text-align: justify;
+    padding: 25px;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+div#intro-desc {
+    padding: 10px;
+    display: none;
+    color: white;
+    font-family: barlow;
+
+}
+
+div#text-bg {
+    margin-top: 15px;
+    border: #00ffd5 2px solid;
+    height: 90%;
+}
+
+h6#intro-skills {
+    font-size: 15px;
+    font-weight: 300;
+
+}
+
+
+
+h1#skl-title {
+    color: white;
+    font-family: barlow;
+    font-weight: 400;
+    font-size: 30px;
+
+}
+
+h1#pck-title {
+    color: white;
+    font-family: barlow;
+    font-weight: 400;
+    font-size: 30px;
+
+}
+
+
+.skl-text {
+    color: white;
+    font-family: barlow;
+    align-content: center;
+    text-align: center;
+    font-size: 15px;
+    
+}
+
+
+div#row1 {
+    margin-top: 15px;
+    display: flex
+}
+
+div#skl1 {
+    margin-right: 15px;
+
+}
+
+div#skl1, #skl2 {
+    padding: 7px;
+    border-color: #00ffd5;
+    border-width: 2px;
+    border-style: solid;
+    height: 100px;
+    width: 50%;
+}
+
+
+.material-symbols-outlined {
+    background-color: rgb(26, 26, 26);
+    border-style: none;
+    color: white;
+    cursor: pointer;
+    height: 60px;
+    width: 70px;
+    position: absolute;
+    margin-left: -1px;
+    transform: translateY(520%);
+}
+
+
+button#next, #prev {
+    font-size: 35px;
+}
+
+button#next {
+    right: 65px;
+    position: absolute;
+
+}
+
+
+
+div#skills1 {
+    margin-top: -1px;
+    background-color: rgb(32, 32, 32);
+    height: 460px;
+    padding: 25px;
+}
+
+div#skills2 {
+    margin-top: -1px;
+    background-color: rgb(26, 26, 26);
+    height: 100%;
+    padding: 25px;
+}
+
+
+.image-list {
+    display: flex;
+
+}
+
+.image-item {
+    height: 300px;
+    cursor: pointer;
+    width: 240px;
+    object-fit: cover;
+    margin-right: 8px;
+}
+
+.image-item2 {
+    height: 300px;
+    cursor: pointer;
+    width: 250px;
+    object-fit: cover;
+}
+
+div#nest2 {
+    width: 100%;
+}
+
+div#top-row {
+    margin-top: -5px;
+    overflow-x: auto;
+    scrollbar-width: none;
+    margin-bottom: 15px;
+    display: flex;
+    margin-bottom: 15px;
+}
+
+h1#skl-ins {
+    font-size: 12px;
+    font-family: barlow;
+    color: white;
+    font-weight: 400;
+}
+
+
+.popup-img, .popup-img2, .popup-img3, .popup-img4, .popup-img5, .popup-img6, .popup-img7, .popup-img8, .popup-img9 {
+    padding-top: 130px;
+    display: none;
+    position: fixed;
+    top: 0; left: 0;
+    background-color: rgba(14, 14, 14, 0.952);
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+
+
+
+
+.popup-desc {
+    position: relative;
+    top: 65%; left: -50;
+    color: white;
+    text-align: center;
+    font-family: barlow;
+    font-weight: 300;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.popup-name {
+    position: relative;
+    top: 65%; left: -50;
+    color: white;
+    text-align: center;
+    font-family: barlow;
+    font-weight: 500;
+}
+
+
+.popup-nest {
+    height: 500px;
+    position: absolute;
+    top: 50%; left: 50%; 
+    transform: translate(-50%, -61%);
+    border: 2px solid rgb(58, 58, 58);
+    object-fit: cover;
+}
+
+span#close-btn, #close-btn2, #close-btn3, #close-btn4, #close-btn5, #close-btn6, #close-btn7, #close-btn8, #close-btn9 {
+    font-weight: 500;
+    color: rgb(0, 255, 213);
+    font-family: barlow;
+    border: 2px solid rgb(0, 255, 213);
+    padding: 20px;
+    cursor: pointer;
+}
+
+
+div#pck-nest1, #pck-nest2, #pck-nest3, #pck-nest4, #pck-nest5  {
+    cursor: pointer;
+    display: flex;
+    height: 100px;
+    margin-bottom: 15px;
+
+}
+
+.pck-img {
+    width: 35%;   
+}
+
+div#img1 {
+    background-image: url('img/p1.png');
+    background-size: cover;
+    background-position: 80% 95%;
+
+}
+
+div#img2 {
+    background-image: url('img/p2.png');
+    background-size: cover;
+    background-position: 60% 95%;
+}
+
+div#img3 {
+    background-image: url('img/p3.png');
+    background-size: cover;
+    background-position: 95%, 15%;
+}
+
+div#img4 {
+    background-image: url('img/p4.png');
+    background-size: cover;
+    background-position: 60% 90%;
+}
+
+div#img4 {
+    background-image: url('img/p4.png');
+    background-size: cover;
+    background-position: 60% 100%;
+}
+
+div#img5 {
+    background-image: url('img/p5.png');
+    background-size: cover;
+    background-position: 60% 80%;
+}
+
+.pck-title-img {
+    margin-top: 7px;
+    font-family: barlow;
+    color: white;
+    font-size: 8px;
+    font-weight: 400;
+    border: 1px rgb(58, 58, 58) solid;
+    padding: 5px 0 5px 0;
+    background-color: rgb(26, 26, 26);
+}
+
+.pck-desc-img {
+    margin-top: -5px;
+    font-family: barlow;
+    color: white;
+    font-size: 10px;
+    font-weight: 200;
+}
+
+
+
+
+.pck-desc {
+    align-content: center;
+    text-align: center;
+    background-color: rgb(37, 37, 37);
+    width: 65%;
+    padding: 15px;
+}
+
+
+
+
+
+
+div#skills3 {
+    margin-top: -1px;
+    background-color: rgb(32, 32, 32);
+    height: 100%;
+    padding: 25px;
+}
+
+
+div#skl3-top {
+    display: flex;
+    height: 271px;
+    margin-bottom: 15px;
+}
+
+div#skl3-bot {
+    display: flex;
+    height: 271px;
+    margin-bottom: 15px;
+}
+
+div#top-left {
+    width: 100%;
+    background-image: url(img2/c1.webp);
+    background-size: cover;
+    background-position: 8% ;
+    height: 100%;
+    border: 1px solid rgb(58, 58, 58);
+
+
+}
+div#top-right {
+    width: 100%;
+    background-image: url(img2/b1.webp);
+    background-size: cover;
+    background-position: 95% ;
+    height: 100%;
+    border: 1px solid rgb(58, 58, 58);
+
+
+}
+
+div#nest-img1, #nest-img2, #nest-img3, #nest-img4 {
+    width: 50%;
+    
+}
+
+div#nest-img1,#nest-img3 {
+    margin-right: 15px;
+
+
+}
+
+div#top-left2 {
+    width: 100%;
+    background-image: url(img2/u1.webp);
+    background-size: cover;
+    background-position: 28% 50%;
+    height: 100%;
+    border: 1px solid rgb(58, 58, 58);
+}
+
+div#top-right2 {
+    width: 100%;
+    background-image: url(img2/l1.webp);
+    background-size: cover;
+    background-position: 50% 35%;
+    height: 100%;
+    border: 1px solid rgb(58, 58, 58);
+}
+
+
+div#top-left:hover, #top-right:hover, #top-left2:hover, #top-right2:hover
+{
+    border: 1px solid #00ffd5;
+    transition: .3s ease;
+
+}
+
+
+
+
+.skl-name {
+    color: white;
+    font-family: barlow;
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: 216px;
+    height: 25px;
+    background-color: rgba(37, 37, 37, 0.945);
+    padding: 10px 5px 10px 5px;
+    text-align: center;
+    font-size: 9px;
+    align-content: center;
+    padding:15px;
+    
+
+}
+
+
+
+div#contact {
+    height: 100%;
+    background-color: rgb(32, 32, 32);
+    padding: 25px;
+    margin-top: -1px;
+
+
+}
+
+
+div#footer {
+    height: 40px;
+    background-color: #00ffd5;
+    padding: 15px 50px 15px 50px;
+}
+
+h2#footer-txt {
+    font-size: 10px;
+    text-align: center;
+    font-family: barlow;
+    font-weight: 400;
+
+}
+
+
+
+div#add {
+    height: 80px;
+    background-color:rgb(37, 37, 37);
+    padding: 15px;
+    align-content: center;
+    text-align: center;
+    color: white;
+    font-family: barlow;
+}
+
+
+h1#con-title {
+    color: white;
+    font-family: barlow;
+    font-size: 20px;
+    font-weight: 400;
+
+}
+
+h1#con-title2 {
+    color: rgb(0, 255, 213);
+    font-family: barlow;
+    font-size: 13px;
+    font-weight: 400;
+    margin-bottom: 25px;
+
+}
+
+h3#add-txt {
+    font-size: 10px;
+}
+
+h6#add-desc {
+    margin-top: -5px;
+    font-size: 13px;
+    font-weight: 400;
+    margin-bottom: 15px;
+    font-weight: 200;
+}
+
+
+div#em {
+    height: 100px;
+    background-color:rgb(37, 37, 37);
+    padding: 15px;
+    align-content: center;
+    text-align: center;
+    color: white;
+    font-family: barlow;
+    margin-top: 25px;
+}
+
+h3#em-txt {
+    font-size: 10px;
+}
+
+h6#em-desc {
+    margin-top: 5px;
+    font-size: 13px;
+    font-weight: 400;
+    margin-bottom: 15px;
+    font-weight: 200;
+}
+
+div#soc {
+    height: 80px;
+    background-color:rgb(37, 37, 37);
+    margin-top: 25px;
+    padding: 15px;
+}
+
+
+button#btn-top {
+    cursor: pointer;
+    margin-top: 15px;
+    padding: 15px;
+    font-family: barlow;
+    background-color: rgb(32, 32, 32);
+    border: 2px solid #00ffd5;
+    color: #00ffd5;
+
+
+}
+
+@media only screen and (min-width: 20px) {
+    div#land-top-img2 {
+        display: none;
+    }
+
+
+}
+
+@media only screen and (min-width: 333px) {
+    body {
+        margin: 100px 25px 0px 25px;
+    }
+    div#skills-name {
+        display: none;
+    }
+
+    h3#sub {
+        padding: 0 25px 0 25px;
+    }
+
+}
+
+
+
+@media only screen and (min-width: 412px) {
+    body {
+        margin: 100px 40px 0px 40px;
+    }
+
+    h3#sub {
+        padding: 0 45px 0 45px;
+    }
+
+}
+
+
+@media only screen and (orientation:landscape) and (min-width:882px) {
+
+    ul {
+        transform: translateY(30%);
+    }
+    
+
+}
+
+
+
+@media only screen and (min-width: 492px) {
+
+    div#footer {
+        height: 25px;
+    }
+
+}
+
+
+
+@media only screen and (min-width: 769px) {
+
+    body {
+        margin: 68px 75px -20px 75px;
+    }
+
+    div#landscape {
+        display: block;
+    
+    }
+
+    div#portrait {
+        display: none;
+    }
+
+
+    div#navigation {
+    display: none;
+    }
+
+    div#about {
+        height: 100%;
+
+    }
+
+    h3#sub {
+        font-size: 30px;
+    }
+    
+    h1#name {
+        font-size: 90px;
+        margin-top: -50px;
+    }
+
+    div#home {
+        width: 100%;
+        height: 250px;
+        margin-top: -85px;
+        
+    }
+    
+    .slide {
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    
+    .slide-img {
+        display: inline-block;
+        animation: 20s slide infinite linear;
+        padding-top: 70px;
+    }
+    
+    img#wel {
+        height: 100px;
+    }
+    
+    @keyframes slide {
+        from {
+            transform: translateX(0);
+        }
+    
+        to {
+            transform: translateX(-100%);
+        }   
+    }
+
+    .divline {
+        margin-top: -6px;
+        background-image: url(img/line2.png);
+        background-attachment: fixed;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 30px;
+        border-width: 11px;
+        border-color: rgb(0, 255, 213);
+        border-style: solid;
+    }
+
+    h5#disc {
+        display: none;
+    }
+
+    .faux {
+        margin-top: -1px;
+        height: 80px;
+        background-color: rgb(26, 26, 26);
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+    
+    .icons {
+        float: right;
+        padding-right: 15px;
+        letter-spacing: 5px;
+        font-size: 25px;
+        color: white;
+    }
+    
+    .pgm {
+        font-size: 25px;
+        float: left;
+        font-family: barlow;
+        font-weight: 300;
+        color: white;
+        margin-left: 25px;
+        letter-spacing: 4px;
+    }
+
+
+
+    /*landscapemode*/
+    div#land-top-img {
+        display: flex;
+        height: 350px;
+        margin-bottom: 20px;
+
+    }
+
+    div#land-top-img2 {
+        display: flex;
+        height: 350px;
+
+    }
+
+    div#skl-main {
+        width: 35%;
+        height: 100%;
+        border: 2px solid #00ffd5;
+        background-color: #00ffd5;
+        margin-right: 15px;
+        align-content: center;
+        color: rgb(26, 26, 26);
+        font-family: barlow;
+        font-size: 18px;
+
+    }
+
+    div#skl-category-nest {
+        width: 65%;
+        height: 100%;
+
+    }
+
+    div#skl-category-nest-top {
+        display: flex;
+        height: 50%;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    div#skl-category-nest-bot {
+        display: flex;
+        height: 50%;
+        width: 100%;
+    }
+
+    .skl-category {
+        width: 25%;
+        height: 89%;
+        margin-right: 13px;
+        padding: 5px;
+        border: #00ffd5 2px solid;
+        align-content: center;
+        text-align: center;
+        color: white;
+        font-family: barlow;
+        font-weight: 100;
+
+
+    }
+
+    .skl-category2 {
+        width: 24.5%;
+        height: 89%;
+        padding: 5px;
+        border: #00ffd5 2px solid;
+        align-content: center;
+        text-align: center;
+        color: white;
+        font-family: barlow;
+        font-weight: 100;
+
+    }
+
+    .skl-font {
+        font-weight: 400;
+
+    }
+
+
+
+    div#land-pic {
+        height: 100%;
+        width: 25%;
+        background-color: #00ffd5;
+        background-image: url('img/portrait.png');
+        background-size: cover;
+        background-position: center;
+        margin-right: 15px;
+        border: 2px solid #00ffd5;
+    }
+
+    div#land-desc {
+        height: 100%;
+        width: 55%;
+        margin-right: 15px;
+        border: 2px solid #00ffd5;
+    }
+
+    div#land-skl {
+        height: 100%;
+        width: 20%;
+    }
+
+    .land-skl-nest {
+        padding: 5px;
+        height: 13.99%;
+        width: 100%;
+        background-color: #00ffd5;
+        margin-bottom: 15px;
+        align-content: center;
+    }
+
+    .land-skl-nest2 {
+        padding: 5px;
+        height: 13.99%;
+        width: 100%;
+        background-color: #00ffd5;
+        align-content: center;
+    }
+
+    .land-skl-nest-txt {
+        text-align: center;
+        font-family: barlow;
+        font-weight: 500;
+        
+    }
+
+
+
+
+    h1#land-abt {
+        text-align: center;
+        margin-top: 0px;
+        padding: 15px;
+        color: rgb(26, 26, 26);
+        font-size: 25px;
+        font-family: barlow;
+        font-weight: 700;
+        background-color: #00ffd5;
+    }
+
+    p#land-info {
+        margin-top: -15px;
+        height: 100%;
+        padding: 25px;
+        color: white;
+        font-size: 1.2em;
+        font-family: barlow;
+        font-weight: 200;
+        text-align: justify;
+        
+    }
+
+    h1#land-title {
+        text-align: center;
+        margin-top: 0px;
+        padding: 15px;
+        color: rgb(26, 26, 26);
+        font-size: 25px;
+        font-family: barlow;
+        font-weight: 700;
+        background-color: #00ffd5;
+    }
+
+    h6#land-skills {
+        text-align: center;
+        color: rgb(26, 26, 26);
+        font-family: barlow;
+        font-weight: 500;
+        font-size: 10px;
+        padding: 25px;
+        margin-top: -50px;
+
+    }
+
+    div#land-skills-nest {
+        margin-top: 55px;
+
+    }
+
+    div#skills1 {
+        height: 450px;
+
+    }
+
+    button#next {
+        right: 97px;
+    
+    }
+
+    div#skills-nest-2 {
+        display: flex;
+        width: 100%;
+
+    }
+
+    div#skills2 {
+        width: 50%;
+        background-color: rgb(32, 32, 32);
+    }
+
+    div#skills3 {
+        width: 50%;
+        height: 650px;
+        background-color: rgb(32, 32, 32);
+    }
+
+    div#contact-nest {
+        display: flex;
+    }
+
+    div#add {
+        width: 33.3%;
+        height: 100px;
+        margin-right: 25px;
+
+    }
+
+    div#em {
+        margin-top: 0;
+        width: 33.3%;
+        margin-right: 25px;
+
+    }
+
+    div#soc {
+        margin-top: 0;
+        width: 33.3%;
+        height: 100px;
+
+    }
+
+    button#btn-top {
+        margin-top: 25px; 
+    }
+
+    div#top-left {
+        background-position: 3% 50%;
+    }
+
+    div#top-left2 {
+        background-position: 50% 50%;
+    }
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+}
+
+@media only screen and (min-width: 877px) {
+
+    p#land-info {
+        margin-top: 20px;
+        font-size: 1.2em;
+    }
+
+    h6#land-skills {
+        font-size: 10px;
+    }
+
+    div#land-skills-nest {
+        margin-top: 75px;
+
+    }
+
+
+
+}
+
+@media only screen and (min-width: 965px) {
+
+    p#land-info {
+        font-size: 1.45em;
+    }
+
+}
+
+@media only screen and (min-width: 1009px) {
+
+    div#skl-main {
+        font-size: 25px;
+    }
+
+    div#skills1 {
+        height: 670px;
+    }
+
+    .image-item {
+        height: 500px;
+        width: 300px;
+    }
+
+    .image-item2 {
+        height: 500px;
+        width: 300px;
+    }
+
+    .material-symbols-outlined {
+        transform: translateY(855%);
+    }
+
+
+}
+
+
+
+@media only screen and (min-width: 1188px) {
+
+    p#land-info {
+        font-size: 1.7em;
+    }
+
+    .skl-category2, .skl-category {
+        font-size: 20px;
+
+    }
+
+
+
+
+}
+
+
+
+@media only screen and (min-width: 1288px) {
+
+    p#land-info {
+        font-size: 1.9em;
+    }
+
+    h6#land-skills {
+        font-size: 12px;
+    }
+
+    div#land-skills-nest {
+        margin-top: 75px;
+
+    }
+
+}
+
+@media only screen and (min-width: 1356px) {
+    .pck-title-img {
+        font-size: 10px;
+    }
+
+    .pck-desc-img {
+        font-size: 17px;
+    }
+
+}
+
+@media only screen and (min-width: 1010px) {
+    .skl-name {
+        font-size: 15px;
+
+    }
+
+
+
+}
+
+@media only screen and (min-width: 1417px) {
+    p#land-info {
+        font-size: 1.9em;
+    }
+}
+
+
+@media only screen and (min-width: 1453px) {
+    body {
+        margin: 120px 250px -20px 250px;
+    }
+
+
+    div#land-top-img2 {
+        height: 350px;
+
+    }
+
+    
+    h1#name {
+        font-size: 150px;
+        margin-top: -50px;
+    }
+
+    div#home {
+        width: 100%;
+        height: 450px;
+        margin-top: -85px;
+        
+    }
+
+    div#navigation {
+        display: block;
+        background-color: rgb(0, 255, 213);
+        height: 170px;
+        margin-top: -132px;
+        padding-top: 5px;
+        padding-left: 30px;
+        margin-bottom: -50px;
+    }
+    
+    button#nav {
+        display: inline-block;
+        color: rgb(32, 32, 32);
+        margin-top: 30px;
+        margin-right: 40px;
+        font-size: 30px;
+        background-color: rgb(0, 255, 213);
+        border-style: none;
+        font-family: barlow;
+        font-weight: 400;
+        padding: 20px 60px 25px 60px;
+        cursor: pointer;
+    }
+    
+    button#nav:hover {
+        display: inline-block;
+        color: white;
+        margin-top: 30px;
+        margin-right: 40px;
+        font-size: 30px;
+        background-color: #252525;
+        border-style: none;
+        font-family: barlow;
+        font-weight: 400;
+        padding: 20px 60px 25px 60px;
+        cursor: pointer;
+        transition: .2s;
+    }
+    
+    div#navline {
+        display: block;
+        background-color: rgb(37, 37, 37);
+        height: 10px;
+        margin-left: -90px;
+        margin-top: -45px;
+    }
+
+    h5#disc {
+        display: block;
+        font-size: 50px;
+        font-family: barlow;
+        font-weight: 300;
+        color: rgb(37, 37, 37);
+        text-decoration: none;
+        margin-top: 80px;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+
+    img#wel {
+        height: 150px;
+    }
+
+    .slide-img {
+        display: inline-block;
+        animation: 30s slide infinite linear;
+        padding-top: 120px;
+    }
+
+    p#land-info {
+        font-size: 1.7em;
+    }
+
+    h6#land-skills {
+        font-size: 12px;
+    }
+
+    div#land-skills-nest {
+        margin-top: 75px;
+
+    }
+
+    .skl-category, .skl-category2 {
+        font-size: 20px;
+
+
+
+    }
+
+    div#skills1 {
+        height: 700px;
+
+        
+    }
+
+    button#next {
+        right: 275px;
+        font-size: 55px;
+    
+    }
+
+    h1#skl-title {
+        display: none;
+
+    }
+
+    h1#pck-title {
+        display: none;
+
+    }
+
+
+
+
+    div#skills-name {
+        display: block;
+        height: 90px;
+        margin-bottom: 25px;
+        padding: 25px;
+        align-content: center;
+        text-align: center;
+        font-family: barlow;
+        color: #00ffd5;
+        font-size: 18px;
+        border: 1px #00ffd5 solid;
+    }
+
+    .image-list {
+        background-color: rgb(26, 26, 26);
+        padding: 12px;
+       
+    
+    }
+
+    .material-symbols-outlined {
+        transform: translateY(470%);
+        width: 80px;
+        height: 90px;
+    }
+
+    .image-item {
+        height: 500px;
+        width: 350px;
+        margin-right: 15px;
+    }
+
+    .image-item2 {
+        height: 500px;
+        width: 300px;
+    }
+
+
+    button#prev {
+        left: 276px;
+        font-size: 55px;
+    
+    }
+
+    div#pck-nest1, #pck-nest2, #pck-nest3, #pck-nest4, #pck-nest5  {
+        height: 180px;
+        border: 1px rgb(58, 58, 58) solid;
+    }
+
+    div#pck-nest1:hover, #pck-nest2:hover, #pck-nest3:hover, #pck-nest4:hover, #pck-nest5:hover  {
+        border: #00ffd5 1px solid;
+        transition: .3s ease;
+
+
+    }
+
+
+    div#skl3-top {
+        height: 477px;
+    }
+    
+    div#skl3-bot {
+        height: 477px;
+    }
+
+    div#skills3 {
+        height: 1152px;
+
+    }
+
+    .skl-name {
+        margin-top: 422px;
+        font-size: 15px;
+
+    }
+
+    .pck-desc-img {
+        font-size: 20px;
+        padding: 0 30px 0 30px;
+    }
+
+    .pck-title-img {
+        font-size: 15px;
+        margin-top: 17px;
+    }
+
+    img#logo {
+        display: none;
+    }
+
+    div#portrait-nav {
+        background-color: #25252500;
+    }
+
+    .burger {
+        height: 100px;
+        width: 178px;
+        align-content: center;
+    }
+
+    h2#burger-icon {
+        margin-top: 25px;
+        font-size: 50px;
+
+    }
+
+    
+
+
+    
+
+
+
+
+
+
+
+
+}
+
+@media only screen and (min-width: 1607px) {
+    .portrait-nav-pop {
+    padding-top: 350px;
+    transition: 0;
+
+}
+
+
+}
+
+
+@media only screen and (min-width: 1659px) {
+
+    h1#land-abt {
+        margin-top: 0px;
+    }
+
+
+    p#land-info {
+        margin-top: 5px;
+        font-size: 1.7em;
+        line-height: 42px;
+    }
+
+
+
+
+    
+
+
+}
+
+@media only screen and (min-width: 1759px) {
+
+
+    p#land-info {
+        font-size: 1.9em;
+    }
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Troy's Portfolio</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <link rel="stylesheet" href="media.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">    
+    <link rel="icon" type="image/x-icon" href="images/plogo2.png">
+</head>
+<body>
+<div id="main"></div>
+
+
+    <nav class="navbar">
+        <div class="navdiv"> 
+            <div class="logo">
+                <img src="images/plogo2.png" alt="" id="lhome" height="60" width="60">
+            </div>
+            
+            <ul id="menuList">
+                <a href="index.html"><li class="navbtn">Home</li>
+                <a href="#about"><li class="navbtn">About</li>
+                <a href="#contactme"><li class="navbtn" id="contact">Contact</li></a>
+                <li class="navdivider">|</li>
+                <a href="#graphicdesign" ><li class="navbtn">Graphic Design</li></a>
+                <a href="#ui/ux design"><li class="navbtn">UI/UX Design</li></a>
+                <a href="#videoediting"><li class="navbtn" id="ve">Video Editing</li></a>
+            </ul>
+
+            <div class="menu">
+                <img src="images/menu.png" alt="" height="60" width="60" onclick="toggleMenu()">
+            </div>
+
+        </div>
+    </nav>
+
+
+<div class="home-mask"></div>   
+<div id="home">
+    <h2 id="home1"> your resident multimedia artist,</h2>
+    <h1 id="home2"> TROY SUBOC</h1>
+    <center><img src="images/arrow.png" alt=""></center>
+</div>
+
+
+<div class="about" id="about">
+    <div class="color-mask"></div>
+    <div class="pic"></div>
+    <div class="abt-desc">
+        <div class="abt-wrap">
+        <h1 id="abt-head1">About Me</h1>
+        <p id="abt-p">I am Justin Troy Suboc, a Philippine based multimedia artist whose goal is to bring a vision to reality. I specialize in illustration and graphic design, but I also do other mediums, where I test the limits of my creativity.</p>
+        <a href="https://drive.google.com/file/d/1semBIEGWVIRYowIFq_UeC93_Nu45K_O-/view?usp=sharing" target="_blank"><button id="resume"> View Resume > </button></a>
+        </div>
+    </div>
+</div>
+
+<div class="divider" id="graphicdesign"></div>
+<center><h1 class="port-title"><img src="images/art.png" alt="">Posters and Illustrations</h1></center>
+
+<div class="container">
+    <div class="image-container">
+        <div class="image"><img src="images/1.webp" alt=""></div>
+        <div class="image"><img src="images/2.webp" alt=""></div>
+        <div class="image"><img src="images/3.webp" alt=""></div>
+        <div class="image"><img src="images/4.webp" alt=""></div>
+        <div class="image"><img src="images/5.webp" alt=""></div>
+        <div class="image"><img src="images/6.webp" alt=""></div>
+        <div class="image"><img src="images/7.webp" alt=""></div>
+        <div class="image"><img src="images/8.webp" alt=""></div>
+        <div class="image"><img src="images/9.webp" alt=""></div>
+        <div class="image"><img src="images/10.webp" alt=""></div>
+        <div class="image"><img src="images/11.webp" alt=""></div>
+        <div class="image"><img src="images/12.webp" alt=""></div>  
+        <div class="image"><img src="images/13.webp" alt=""></div>  
+        <div class="image"><img src="images/14.webp" alt=""></div>            
+    </div>
+</div>
+
+<div class="popup-image">
+    <span>&times;</span>
+    <img src="images/1.webp" alt="">
+    <div class="popup-exit-img"></div>
+</div>
+
+<div class="divider2"></div>
+
+<div class="container2">
+    <div class="package-main">
+            <center><img src="images/package.png" alt=""></center>
+            <center><h1>Package <br> Designs</h1></center>
+    </div>
+    
+    <div class="package" id="p1">
+        <img src="images/s1.webp">
+        <div class="pck-desc">
+            <h1>Masterfoods</h1>
+            <h2>Tweaking Of An Existing Brand Identity To Make It More Cohesive.</h2>
+        </div>
+    </div>
+
+    <div class="package" id="p2">
+        <img src="images/s2.webp">
+        <div class="pck-desc">
+            <h1>Turbo</h1>
+            <h2>Repackaging And Redesigning Of An Existing Brand.</h2>
+        </div>
+    </div>
+
+    <div class="package" id="p3">
+        <img src="images/s3.webp">
+        <div class="pck-desc">
+            <h1>Dreamylk</h1>
+            <h2>An Original Branding Design Of A Fun And Colorful Milk Product.</h2>
+        </div>
+    </div>
+
+    <div class="package" id="p4">
+        <img src="images/s4.webp">
+        <div class="pck-desc">
+            <h1>Good Ol' Grans</h1>
+            <h2>A Complete Overhaul And Redesign Of An Existing Brand Of Jam.</h2>
+        </div>
+    </div>
+
+    <div class="package" id="p5">
+        <img src="images/s5.webp">
+        <div class="pck-desc">
+            <h1>Golden Experience</h1>
+            <h2>An Original Branding Design Of A Sweet Snack From The Philippines.</h2>
+        </div>
+    </div>
+</div>
+
+<div class="popup-package">
+    <span>&times;</span>
+    <img src="images/s1.webp" alt=""><img src="images/cmp2.webp" alt="" id="popup-second">
+    <div class="popup-exit"></div>
+</div>
+
+<div class="popup-package2">
+    <span>&times;</span>
+    <img src="images/s2.webp" alt=""><img src="images/cmp3.webp" alt="" id="popup-second">
+    <div class="popup-exit2"></div>
+</div>   
+
+<div class="popup-package3">
+    <span>&times;</span>
+    <img src="images/s3.webp" alt=""><img src="images/cmp5.webp" alt="" id="popup-second">
+    <div class="popup-exit3"></div>
+</div>   
+
+<div class="popup-package4">
+    <span>&times;</span>
+    <img src="images/s4.webp" alt=""><img src="images/cmp1.webp" alt="" id="popup-second">
+    <div class="popup-exit4"></div>
+</div>
+
+<div class="popup-package5">
+    <span>&times;</span>
+    <img src="images/s5.webp" alt=""><img src="images/cmp4.webp" alt="" id="popup-second">
+    <div class="popup-exit5"></div>
+</div> 
+
+<div id="ui/ux design"></div>
+<div style="border-bottom: 1px solid rgb(46, 46, 46);"></div>
+<center><h1 class="port-title"><img src="images/ui.png" alt="">UI/UX Designs</h1></center>
+
+<div class="container3">
+    <div class="ui-container"  id="ui1">
+        <img src="images2/cover2.webp" alt="">
+        <h1>Famous Belgian Waffles</h1>
+        <h2>A website redesign to make it more consistent. </h2>
+    </div>
+    
+    <div class="ui-container" id="ui2">
+        <img src="images2/cover1.webp" alt="">
+        <h1>Cold Layers Cafe</h1>
+        <h2>A website redesign to make it more modern and sleek. </h2>
+    </div>
+    <div class="ui-container" id="ui3">
+        <img src="images2/cover3.webp" alt="">
+        <h1>Unbeleafable</h1>
+        <h2>A website redesign to decrease the amounts of white spaces. </h2>
+    </div>
+    <div class="ui-container" id="ui4">
+        <img src="images2/cover4.webp" alt="">
+        <h1>Calis</h1>
+        <h2>A mobile app design that tracks a person's health and wellness. </h2>
+    </div>
+
+</div>
+
+<div class="img-slider swiper">
+    <div class="card-wrapper">
+        <span>&times;</span>
+        <ul class="card-list swiper-wrapper">
+            <li class="card-item swiper-slide">
+                <center><img src="images2/w1.webp" alt="Card I" class="card-image"></center>
+            </li>
+            <li class="card-item swiper-slide">
+                <center><img src="images2/w2.webp" alt="Card I" class="card-image"></center>
+            </li>
+            <li class="card-item swiper-slide">
+                <center><img src="images2/w3.webp" alt="Card I" class="card-image"></center>
+            </li>
+            <li class="card-item swiper-slide">
+                <center><img src="images2/w4.webp" alt="Card I" class="card-image"></center>
+            </li>
+            <li class="card-item swiper-slide">
+                <center><img src="images2/w5.webp" alt="Card I" class="card-image"></center>
+            </li>
+            <li class="card-item swiper-slide">
+                <center><img src="images2/w6.webp" alt="Card I" class="card-image"></center>
+            </li>
+            <li class="card-item swiper-slide">
+                <center><img src="images2/w7.webp" alt="Card I" class="card-image"></center>
+            </li>
+            <li class="card-item swiper-slide">
+                <center><img src="images2/w8.webp" alt="Card I" class="card-image"></center>
+            </li>
+            <li class="card-item swiper-slide">
+                <center><img src="images2/w9.webp" alt="Card I" class="card-image"></center>
+            </li>
+        </ul>
+    </div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+</div>
+
+<div class="img-slider2 swiper">
+    <div class="card-wrapper2">
+        <span>&times;</span>
+        <ul class="card-list2 swiper-wrapper">
+            <li class="card-item2 swiper-slide">
+                <center><img src="images2/c1.webp" alt="Card I" class="card-image2"></center>
+            </li>
+            <li class="card-item2 swiper-slide">
+                <center><img src="images2/c2.webp" alt="Card I" class="card-image2"></center>
+            </li>
+            <li class="card-item2 swiper-slide">
+                <center><img src="images2/c3.webp" alt="Card I" class="card-image2"></center>
+            </li>
+            <li class="card-item2 swiper-slide">
+                <center><img src="images2/c4.webp" alt="Card I" class="card-image2"></center>
+            </li>
+            <li class="card-item2 swiper-slide">
+                <center><img src="images2/c5.webp" alt="Card I" class="card-image2"></center>
+            </li>
+        </ul>
+    </div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+</div>
+
+<div class="img-slider3 swiper">
+    <div class="card-wrapper3">
+        <span>&times;</span>
+        <ul class="card-list3 swiper-wrapper">
+            <li class="card-item3 swiper-slide">
+                <center><img src="images2/u1.webp" alt="Card I" class="card-image3"></center>
+            </li>
+            <li class="card-item3 swiper-slide">
+                <center><img src="images2/u2.webp" alt="Card I" class="card-image3"></center>
+            </li>
+            <li class="card-item3 swiper-slide">
+                <center><img src="images2/u3.webp" alt="Card I" class="card-image3"></center>
+            </li>
+            <li class="card-item3 swiper-slide">
+                <center><img src="images2/u4.webp" alt="Card I" class="card-image3"></center>
+            </li>
+            <li class="card-item3 swiper-slide">
+                <center><img src="images2/u5.webp" alt="Card I" class="card-image3"></center>
+            </li>
+            <li class="card-item3 swiper-slide">
+                <center><img src="images2/u6.webp" alt="Card I" class="card-image3"></center>
+            </li>
+            <li class="card-item3 swiper-slide">
+                <center><img src="images2/u7.webp" alt="Card I" class="card-image3"></center>
+            </li>
+            <li class="card-item3 swiper-slide">
+                <center><img src="images2/u8.webp" alt="Card I" class="card-image3"></center>
+            </li>
+            <li class="card-item3 swiper-slide">
+                <center><img src="images2/u9.webp" alt="Card I" class="card-image3"></center>
+            </li>
+            <li class="card-item3 swiper-slide">
+                <center><img src="images2/u10.webp" alt="Card I" class="card-image3"></center>
+            </li>
+            <li class="card-item3 swiper-slide">
+                <center><img src="images2/u11.webp" alt="Card I" class="card-image3"></center>
+            </li>
+            <li class="card-item3 swiper-slide">
+                <center><img src="images2/u12.webp" alt="Card I" class="card-image3"></center>
+            </li>
+            <li class="card-item3 swiper-slide">
+                <center><img src="images2/u13.webp" alt="Card I" class="card-image3"></center>
+            </li>
+        </ul>
+    </div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+</div>
+
+<div class="img-slider4 swiper">
+    <div class="card-wrapper4">
+        <span>&times;</span>
+        <ul class="card-list4 swiper-wrapper">
+            <li class="card-item4 swiper-slide">
+                <center><img src="images2/l1.webp" alt="Card I" class="card-image4"></center>
+            </li>
+            <li class="card-item4 swiper-slide">
+                <center><img src="images2/l2.webp" alt="Card I" class="card-image4"></center>
+            </li>
+            <li class="card-item4 swiper-slide">
+                <center><img src="images2/l3.webp" alt="Card I" class="card-image4"></center>
+            </li>
+        </ul>
+    </div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+</div>
+
+<div class="divider" id="videoediting"></div>
+<div style="border-bottom: 1px solid rgb(46, 46, 46);"></div>
+
+<center><h1 class="port-title"><img src="images/video.png" alt="">Video Editing</h1></center>
+
+
+<div class="container4">
+    <div class="vid-nest">
+    <iframe src="https://drive.google.com/file/d/18reejtWfIUsZBcX6Q7GTpQKBzkvHguAs/preview" width="640" height="480" allow="autoplay"></iframe><h1>MG History Promotional Video</h1>
+    </div>
+
+    <div class="vid-nest">
+    <iframe src="https://drive.google.com/file/d/1eNowUnX_Au-yRcJ3FDNJrseJ_JGMQmXV/preview" width="640" height="480" allow="autoplay"></iframe><h1>Velaris Animated Billboards</h1>
+    </div>
+
+    <div class="vid-nest">
+    <iframe src="https://drive.google.com/file/d/1DMKECkGHkrJTC9kognKojrpz3qo1Ry9T/preview" width="640" height="480" allow="autoplay"></iframe></iframe><h1>Next Upgrade Editing Showcase</h1>
+    </div>
+    
+    <div class="vid-nest">
+    <iframe src="https://drive.google.com/file/d/1IgZqYLGmz3h1lpC9btMMzFYWmLRcaTZ6/preview" width="640" height="480" allow="autoplay"></iframe><h1>Pepsi Mock Commercial</h1>
+    </div>
+
+    <div class="vid-nest">
+    <iframe src="https://drive.google.com/file/d/13ZbW3afsL6aLOYDTvBixQuPluVnvGo9Y/preview" width="640" height="480" allow="autoplay"></iframe><h1>The Boys Fandmade Opening</h1>
+    </div>
+
+    <div class="vid-nest">
+    <iframe src="https://drive.google.com/file/d/1OeKpbaAvKm3iiM_d6_y3jrs6QAW_08QS/preview" width="640" height="480" allow="autoplay"></iframe><h1>Typographic Lyric Video</h1>
+    </div>
+</div>
+
+<div class="divider2" id="contactme"></div>
+
+
+
+<div class="container5" >
+    <div class="contact-container">
+        <form action="https://api.web3forms.com/submit" method="POST" class="contact-left" target="_blank">
+            <div class="contact-left-title">
+                <h2>Reach out to me!</h2>
+                <h3>Feel free to send me a message if you have any inquiries!</h3>
+            </div>
+            <input type="hidden" name="access_key" value="026710a2-4ebb-43ef-8b8a-2f2c16248c7d">
+            <input type="text" name="name" placeholder="Name" class="contact-inputs" required>
+            <input type="text" name="email" placeholder="Email" class="contact-inputs" required>
+            <input type="text" name="organization" placeholder="Organization" class="contact-inputs" required>
+            <textarea name="message" placeholder="Your Message Here..." class="contact-inputs" required></textarea>
+            <button type="submit"> Submit <img src="images/arrow-right-svgrepo-com.svg" alt=""></button>
+        </form>
+    </div>
+    <div class="contact-right">
+        <img src="images/contact-landing-01.png" alt="">
+    </div>
+
+</div>
+
+
+
+<div class="contact-info">
+    <div class="contact-nest">
+        <div class="contact-title"><img src="images/home.png" alt=""><h2>Address</h2></div>
+        <h3> 399 San Agustin Avenue <br> Palatiw, Pasig City</h3>
+    </div>
+    <div class="contact-nest">
+        <div class="contact-title"><img src="images/phone.png"><h2>Phone</h2></div>
+        <h3>0908 653 6046</h3>
+    </div>
+    <div class="contact-nest">
+        <div class="contact-title"><img src="images/email.png"><h2>Email</h2></div>
+        <h3>justinezutroy@gmail.com <br> 202101018@iacademy.edu.ph</h3>
+    </div>
+
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="script.js"></script>
+
+
+ 
+
+<div class="divider3"></div>
+<div class="footer">Portfolio Page © All rights reserved. Designed by Justin Troy Suboc.</div>
+</body>
+</html>

@@ -1,0 +1,717 @@
+body {
+background-image: url('images/bg.webp');
+background-attachment: fixed;
+background-size: contain;
+height: 2500px;
+margin: 0;
+overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 3px;
+}
+
+::-webkit-scrollbar-track {
+    background: black;
+}
+
+::-webkit-scrollbar-thumb {
+    background: white;
+}
+
+* {
+    text-decoration: none;
+}
+
+/* Navigation Bar Elements Start*/
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0);
+    font-family: "roboto mono"; font-weight: 100;
+    position: fixed; 
+    width: 100%;
+    margin-top: -30px;
+    z-index: 999;
+}
+
+ .navdiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.navdiv.scrolled {
+    background-color: rgba(0, 0, 0, 0.918);
+    backdrop-filter: blur(5px);
+}
+
+.navbar ul {
+    display: flex;
+    gap: 30px;
+}
+
+.navbar ul li {
+    text-decoration: none;
+    list-style-type: none;
+    color: white;
+}
+
+.logo, .menu {
+    padding-top: 15px;
+}
+
+
+.menu {
+    display: none;
+}
+/* Navigation Bar Elements End */
+
+ /* Home Page Text Start */
+.home-mask {
+    width: 100%;
+    height: 959px;
+    background-color: rgba(255, 0, 0, 0);
+    position: absolute;
+    margin-top: -30px;
+    transition: background-color 0.4s ease-in-out;
+}
+
+.home-mask.scrolled {
+    background-color: rgba(0, 0, 0, 0.781);
+}
+
+
+ div#home {
+    color: white;
+    text-align: center;
+    font-size: 1.5em; font-family: "roboto mono"; 
+    
+}
+
+h2#home1 {
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    padding-top: 400px;
+    font-weight: 200;
+}
+
+h1#home2 {
+    margin-top: -20px;
+    font-weight: 500;
+    font-size: 4.2em;
+    color: white;
+}
+/* Home Page Text End */
+
+ /* About Page Start */
+.about {
+    margin-top: 338px;
+    height: 39%;
+    width: 100%;
+    display: flex;
+}
+
+.pic {
+    width:40%;
+    height: 100%;
+    background-image: url('images/IMG_8591.webp');
+    background-size: cover;
+    background-position: center;
+}
+
+.abt-desc {
+    width:60%;
+    height: 100%;
+    color: white;
+    background-color: rgba(8, 8, 8, 0.904);
+}
+.color-mask {
+    margin-top: 680px;
+    height: 300px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.959);
+    position: absolute;
+    mask-image: linear-gradient(to top, black, transparent 100%);
+    pointer-events: none;
+    
+}
+
+.abt-wrap {
+    padding: 100px;
+}
+
+h1#abt-head1 {
+    font-size: 3em; font-family: "roboto mono"; font-weight: 200;
+    color: #00ffd5;
+}
+
+p#abt-p {
+    font-size: 2em; font-family: "roboto mono"; font-weight: 100;
+    line-height: 2em;
+    margin-bottom: 50px;
+}
+
+button#resume {
+    cursor: pointer;
+    font-size: 1.5em; font-family: "roboto mono"; font-weight: 200;
+    padding: 20px;
+    border: solid, white, 1px;
+    background-color: rgba(245, 222, 179, 0);
+    color: white;
+    transition: .2s ease-in-out;
+}
+
+button#resume:hover {
+    font-weight: 400;
+    background-color: white;
+    color: black;
+}
+ /* About Page End */
+
+
+.divider {
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.959);
+}
+
+.divider2 {
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.959);
+}
+
+.divider3 {
+    height: 100px;
+    background-color: rgba(12, 12, 12, 0.911);
+}
+
+
+/* Posters and Ilustrations Page Start */
+.container {
+    width: 100%;
+    min-height: 60vh;
+    background-color: rgba(0, 0, 0, 0.877);
+}
+
+.container .image-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    padding: 40px;
+}
+
+.container .image-container .image {
+    width: 227px;
+    height: 100%;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.container .image-container .image img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.image {
+    transition: .6s;
+    filter: grayscale(100%);
+    cursor: pointer;
+}
+
+.image:hover {
+    transform: scale(1.02);
+    filter: grayscale(0);
+}
+
+.port-title {
+    margin: 0;
+    padding: 55px;
+    color: #00ffd5;
+    font-size: 3em; font-family: "roboto mono"; font-weight: 200;
+    background-color: rgba(0, 0, 0, 0.959);
+    cursor: default;
+}
+
+.port-title img {
+    transform: translateY(20%);
+    height: 65px;
+    margin-right: 20px;
+}
+/* Posters and Ilustrations Page End */
+
+    /* Popup-Modal Start */
+    .popup-image {
+        position: fixed;
+        top: 0; left: 0;
+        background-color: rgba(0, 0, 0, 0.637);
+        height: 100%;
+        width: 100%;
+        z-index: 999;
+        display: none;
+        overflow: hidden;
+        backdrop-filter: blur(10px);
+    }
+
+
+    .popup-image span {
+        position: fixed;
+        top: 0; right: 50px;
+        font-size: 100px;
+        font-family: "roboto mono";
+        font-weight: 200;
+        color: white;
+        cursor: pointer;
+        z-index: 100;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+    }
+
+    .popup-image img {
+        position: absolute;
+        top: 50%; left: 50%;
+        transform: translate(-50%, -50%);
+        object-fit: cover;
+        width: 600px;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        box-shadow: 0px 0px 10px#000000
+    }
+    /* Popup-Modal End */
+
+/* Package Design Page Start */
+.container2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    min-height: 50vh;
+    gap: 15px;
+    background-color: rgba(0, 0, 0, 0.959);
+    padding-top: 10px;
+}
+
+.container2 .package {
+    width: 268px;
+    height: 420px;
+    background-color: rgb(12, 12, 12);
+    transition: .6s;
+}
+
+
+.package:hover {
+    transform: scale(1.02);
+}
+
+.package img {
+    cursor: pointer;
+    width: 268px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.pck-desc {
+    margin-top: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.pck-desc, h1, h2{
+    color: white;
+    font-family: "roboto mono";
+    cursor: pointer;
+}
+
+.pck-desc, h1 {
+    font-size: 1.05em;
+    font-weight: 400;
+}
+
+.package-main {
+    width: 275px;
+    height: 420px;
+    background-color: rgb(12, 12, 12);
+}
+
+.package-main h1 {
+    font-size: 2em;
+    cursor: default;
+}
+
+.package-main img {
+    height: 65px;
+    margin-top: 120px;
+}
+
+.pck-desc h2 {
+    font-weight: 200;
+    font-size: .9em;
+    margin-bottom: 25px;
+}
+/* Package Design Page End */
+
+ /* Popup-Package Start */
+    .popup-exit, .popup-exit2, .popup-exit3, .popup-exit4, .popup-exit5 {
+        position: absolute;
+        background-color: rgba(255, 0, 0, 0);
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+    }
+
+    .popup-exit-img {
+        position: absolute;
+        background-color: rgba(255, 0, 0, 0);
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+    }
+
+    .popup-package, .popup-package2, .popup-package3, .popup-package4, .popup-package5 {
+        position: fixed;
+        display: flex;
+        flex-wrap: wrap;
+        top: 0; left: 0;
+        background-color: rgba(0, 0, 0, 0.637);
+        height: 100%;
+        width: 100%;
+        z-index: 999;
+        overflow: hidden;
+        backdrop-filter: blur(10px);
+        gap: 20px;
+        justify-content: center;
+        display: none;
+        
+    }
+
+    .popup-package img, .popup-package2 img, .popup-package3 img, .popup-package4 img, .popup-package5 img {
+        margin-top: 170px;
+        width: 850px;
+        height: 600px;
+        object-fit: cover;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        background-color: #00ffd5;
+    }
+
+    .popup-package span, .popup-package2 span, .popup-package3 span, .popup-package4 span, .popup-package5 span {
+        position: absolute;
+        top: 0; right: 50px;
+        font-size: 100px;
+        font-family: "roboto mono";
+        font-weight: 200;
+        color: white;
+        cursor: pointer;
+        z-index: 100;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+    }
+     /* Popup-Package End */
+
+ /* UI/UX Design Page Start */    
+.container3 {
+    min-height: 50vh;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    background-color: rgba(0, 0, 0, 0.959);
+    justify-content: center;
+}
+
+.ui-container {
+    cursor: pointer;
+    width: 405px;
+    height: 650px;
+    background-color: rgb(12, 12, 12);
+    transition: .6s;
+}
+
+.ui-container:hover {
+    transform: scale(1.02);
+}
+
+.ui-container h1 {
+    margin-top: 70px;
+    cursor: pointer;
+    font-size: 1.2em;
+    padding: 30px;
+    text-align: center;
+}
+
+.ui-container h2 {
+    cursor: pointer;
+    margin-top: -50px;
+    font-size: 1em;
+    padding: 30px;
+    text-align: center;
+    font-weight: 200;
+}
+
+.package-main img {
+    height: 65px;
+    margin-top: 120px;
+}
+
+.ui-container img {
+    position: relative;
+    padding-top: -18px;
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    object-position: 45%;
+}
+ /* UI/UX Design Page End */
+
+ /* Popup UI/UX Design Page Start */
+    .img-slider, .img-slider2, .img-slider3, .img-slider4 {
+        position: fixed;
+        top: 0; left: 0;
+        background-color: rgba(0, 0, 0, 0.637);
+        height: 100%;
+        width: 100%;
+        z-index: 999;
+        backdrop-filter: blur(10px);
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        display: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+    }
+
+    .card-list,
+    .card-list2,
+    .card-list3,
+    .card-list4 {
+        z-index: 1;
+    }
+    
+    .card-list .card-item,
+    .card-list2 .card-item2,
+    .card-list3 .card-item3,
+    .card-list4 .card-item4 {
+        list-style: none;
+    }
+    
+    .card-list .card-image,
+    .card-list2 .card-image2,
+    .card-list3 .card-image3,
+    .card-list4 .card-image4 {
+        z-index: 1;
+        width: 70%;
+        margin-left: -75px;
+    }
+
+    .swiper-button-prev, .swiper-button-next {
+        color: white;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    .img-slider span, .img-slider2 span, .img-slider3 span, .img-slider4 span {
+        position: fixed;
+        top: 0; right: 50px;
+        font-size: 100px;
+        font-family: "roboto mono";
+        font-weight: 200;
+        color: white;
+        cursor: pointer;
+        z-index: 100;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+    }
+  /* Popup UI/UX Design Page Start */
+ 
+  /* Video Editing Page Start */    
+.container4{
+    min-height: 50vh;
+    background-color: rgba(0, 0, 0, 0.959);
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+iframe {
+    height: 350px;
+    width: 540px;
+    border: none;
+    object-fit: contain;
+    overflow-x: hidden;
+}
+
+.vid-nest {
+    background-color: rgb(12, 12, 12);
+    margin-right: 12px;
+    margin-bottom: 12px;
+    transition: .2s;
+    border: solid 2px rgb(48, 48, 48);
+}
+
+.vid-nest h1 {
+    padding-left: 20px;
+    font-weight: 200;
+}
+
+.vid-nest:hover {
+    transform: scale(1.02);
+}
+/* Video Editing Page End */  
+
+/* Contact Page Start */
+.container5 {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgba(12, 12, 12, 0.911);
+}
+
+.contact-container {
+    height: 60vh;
+}
+
+button img {
+    height: 15px;
+}
+
+.contact-right img{
+    margin-top: 75px;
+    height: 550px;
+}
+
+.contact-left {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+    padding: 30px;
+}
+
+.contact-left-title h2 {
+    font-weight: 200;
+    color: #00ffd5;
+    font-size: 50px;
+    margin-bottom: 5px;
+}
+
+.contact-left-title h3 {
+    font-weight: 200;
+    color: white;
+    font-size: 15px;
+    font-family: "roboto mono";
+    margin-bottom: 5px;
+    }
+    
+
+.contact-inputs {
+    width: 550px;
+    height: 50px;
+    border: none;
+    outline: none;
+    font-weight: 200;
+    background-color: #2b2b2b;
+    padding-left: 20px;
+    color: white;
+    font-family: "roboto mono";
+    font-weight: 400;
+}
+
+.contact-inputs:focus {
+    background-color: #474747;
+}
+
+.contact-left button {
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    font-size: 16px;
+    color: white;
+    gap: 10px;
+    border: none;
+    background: #00ffd5;
+    cursor: pointer;
+    color: #000000;
+}
+
+.contact-left textarea {
+    height: 140px;
+    padding-left: 20px;
+    padding-top: 20px;
+    resize: none;
+}
+
+.contact-info {
+
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px;
+    min-height: 20vh;
+    gap: 15px;
+    background-color: rgba(12, 12, 12, 0.911);
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.contact-nest {
+    height: 150px;
+    background-color: rgba(12, 12, 12, 0);
+    width: 465px;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    font-family: "roboto mono";
+    color: white;
+}
+
+.contact-title {
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+
+}
+
+.contact-title img{
+    height: 35px;
+    margin-right: 10px;
+    
+}
+
+.contact-nest h2 {
+    cursor: default;
+    font-size: 1em;
+    font-weight: 400;
+    color: #00ffd5;;
+}
+
+.contact-nest h3 {
+    font-size: 1em;
+    font-weight: 200;
+}
+
+/* Contact Page End */
+
+
+.footer {
+    text-align: center;
+    height: 50px;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    background-color: #00ffd5;
+    font-family: "roboto mono";
+    color: black;
+    font-size: .8em;
+    font-weight: 500;
+}

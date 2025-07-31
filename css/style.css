@@ -479,14 +479,17 @@ input:checked + label.darkmode-landscape svg.moon {
 }
 
 .pfp {
-  height: 500px;
-  width: 500px;
-  background-image: url(../img/bg-accent.gif);
-  background-size: cover;
-  background-color: transparent;
-  background-blend-mode: normal;
-  filter: none;
-  z-index: 999;
+    height: 650px;
+    width: 500px;
+    object-fit: cover;
+    background-color: #0b1755;
+    background-image: url(../img/bg-accent.gif);
+    object-position: -30px 0px;
+    background-blend-mode: var(--blend-mode);
+    background-size: 550px;
+    background-attachment: fixed;
+    border-radius: 50px;
+    z-index: 1;
 }
 
 .resume {

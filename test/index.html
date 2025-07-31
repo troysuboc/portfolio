@@ -1,0 +1,94 @@
+<div class="splash">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" version="1.1" class="pulse"><path d="M 133.734 100.088 C 127.473 101.563, 122.517 104.632, 117.647 110.047 C 110.716 117.756, 110 121.237, 110 147.202 L 110 169.041 130.750 168.770 L 151.500 168.500 151.775 152.883 C 152.121 133.225, 151.806 133.652, 166.298 133.150 C 178.182 132.738, 183.188 133.923, 184.835 137.538 C 185.699 139.434, 186 168.520, 186 250.093 L 186 360.091 183.545 362.545 C 181.201 364.889, 180.537 364.999, 168.795 364.968 C 152.187 364.925, 152.640 365.336, 152 349.710 L 151.500 337.500 130.750 337.230 L 110 336.959 110 358.798 C 110 375.439, 110.362 381.857, 111.522 385.762 C 113.541 392.560, 121.148 400.917, 128.230 404.118 C 133.417 406.463, 133.985 406.500, 164.500 406.500 C 192.594 406.500, 195.963 406.321, 200.441 404.594 C 206.711 402.176, 213.421 396.016, 216.839 389.540 L 219.500 384.500 220 260.785 C 220.473 143.718, 220.596 136.975, 222.286 135.285 C 223.949 133.624, 227.240 133.500, 269.858 133.500 L 315.644 133.500 321.572 136.522 C 329.315 140.470, 332.960 145.834, 335.919 157.632 C 340.138 174.451, 340.317 194.038, 336.396 209.838 C 333.387 221.967, 328.733 228.240, 319.500 232.613 C 314.597 234.934, 313.930 234.981, 285.250 234.990 L 256 235 256 252 L 256 269 289.365 269 C 320.546 269, 322.886 269.123, 325.115 270.886 C 326.805 272.222, 333.148 286.433, 346.876 319.636 L 366.252 366.500 384.376 366.155 C 394.344 365.964, 402.617 365.698, 402.760 365.562 C 402.902 365.425, 393.331 341.948, 381.490 313.390 L 359.960 261.465 366.257 254.983 C 381.614 239.173, 386.907 218.726, 385.668 180 C 384.874 155.178, 381.361 140.192, 372.800 125.104 C 365.653 112.508, 351.121 102.344, 337 100.064 C 328.943 98.764, 139.261 98.786, 133.734 100.088" stroke="none" fill="%23fcf404"></svg>
+    <div class="loading-bar-container">
+      <div class="loading-bar"></div>
+    </div>
+</div>
+
+.splash {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: var(--bg-color); /* or whatever */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.5s ease;
+  opacity: 1;
+  pointer-events: all;
+}
+
+.hide-splash {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.splash svg {
+    height: clamp(9.375rem, 7.7953rem + 6.8681vw, 15.625rem);
+    fill: var(--main-color);
+}
+
+/* Container */
+.loading-bar-container {
+  position: absolute;
+  top: 70%;
+  bottom: 40px;
+  width: 30%;
+  height: 6px;
+  background: var(--light-accent-color);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+/* Animated Bar */
+.loading-bar {
+  height: 100%;
+  width: 0%;
+  background: var(--main-color);
+  transition: width 0.3s ease;
+}
+
+
+
+
+
+const splash = document.querySelector('.splash');
+const loadingBar = document.querySelector('.loading-bar');
+
+// Disable scroll
+document.body.classList.add('no-scroll');
+document.documentElement.classList.add('no-scroll');
+
+let progress = 0;
+let lastTime = null;
+
+function animateProgress(timestamp) {
+  if (!lastTime) lastTime = timestamp;
+  const delta = timestamp - lastTime;
+
+  // Simulate progress increase (slow down near the end)
+  const increment = Math.max(0.1, (100 - progress) / 60);
+  progress += increment;
+
+  if (progress > 90) progress = 90; // cap it for now
+  loadingBar.style.width = `${progress}%`;
+
+  lastTime = timestamp;
+  if (progress < 90) {
+    requestAnimationFrame(animateProgress);
+  }
+}
+
+requestAnimationFrame(animateProgress);
+
+// When page fully loads
+window.addEventListener('load', () => {
+  progress = 100;
+  loadingBar.style.width = '100%';
+
+  setTimeout(() => {
+    splash.classList.add('hide-splash');
+    document.body.classList.remove('no-scroll');
+    document.documentElement.classList.remove('no-scroll');
+  }, 600);
+});

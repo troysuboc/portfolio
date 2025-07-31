@@ -1,0 +1,85 @@
+{
+  "case-studies": [
+    {
+      "title": "Ahon Webtoon",
+      "gallery": "CaseStudyGallery",
+      "image": "img/package/s2.webp"
+    },
+    {
+      "title": "Real Food, Real Fast",
+      "gallery": "CaseStudyGallery",
+      "image": "img/package/s2.webp"
+    },
+    {
+      "title": "Operate your System",
+      "gallery": "CaseStudyGallery",
+      "image": "img/package/s1.webp"
+    },    {
+      "title": "From EBook to Bookshelf!",
+      "gallery": "CaseStudyGallery",
+      "image": "img/package/s2.webp"
+    }
+  ],
+
+  "packaging": [
+    {
+      "title": "Masterfoods",
+      "gallery": "Masterfoods",
+      "image": "img/package/s1.webp"
+    },
+    {
+      "title": "Turbo",
+      "gallery": "Turbo",
+      "image": "img/package/s2.webp"
+    },
+    {
+      "title": "Dreamylk",
+      "gallery": "Dreamylk",
+      "image": "img/package/s3.webp"
+    },
+
+    {
+      "title": "Good Ol' Grans",
+      "gallery": "GoodGrans",
+      "image": "img/package/s4.webp"
+    },
+    {
+      "title": "Golden Experience",
+      "gallery": "GoldenEx",
+      "image": "img/package/s5.webp"
+    }
+  ],
+
+  "uiux": [
+    {
+      "title": "Cold Layers Cafe",
+      "gallery": "coldLayers",
+      "image": "img/ui_ux_carousel/cover1.webp"
+    },
+    {
+      "title": "Famous Belgian Waffles",
+      "gallery": "FamousBelgianWaffles",
+      "image": "img/ui_ux_carousel/cover2.webp"
+    },
+    {
+      "title": "Unbeleafable",
+      "gallery": "Unbeleafable",
+      "image": "img/ui_ux_carousel/cover3.webp"
+    },
+    {
+      "title": "Calis",
+      "gallery": "Calis",
+      "image": "img/ui_ux_carousel/cover4.webp"
+    },
+    {
+      "title": "Portfolio MKi",
+      "gallery": "Calis",
+      "image": "img/ui_ux_carousel/cover4.webp"
+    },
+    {
+      "title": "Portfolio MKii",
+      "gallery": "PorfolioMK2",
+      "image": ""
+    }
+  ]
+}

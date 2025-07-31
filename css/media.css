@@ -1,0 +1,277 @@
+@media (max-width: 1400px) {
+    .profile-text {
+        padding-right: 0;
+    }
+
+    .pfp {
+        margin-right: 0;
+    }
+
+    .next {
+    right: 100px;
+    }
+
+    .prev {
+    left: 100px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .pfp {
+        height: 350px;
+        width: 350px;
+    }
+    .about-nest {
+        display: block;
+        padding-top: 0;
+    }
+
+    .about-pfp, .about-desc {
+        width: 100%;
+        height: 59vh;
+    }
+
+    .about-pfp {
+        justify-content: center;
+    }
+
+
+    .about-desc {
+        margin-top: -150px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 0;
+        row-gap: 30px;
+    }
+
+    .profile-text {
+        line-height: 30px;
+    }
+
+    .playlist-nest {
+    padding: 120px 15px 0px 15px;
+    }
+
+    .video-container {
+    grid-template-columns: 1.5fr 1fr;
+    padding: 10px;
+    }
+
+    .swiper {
+    padding-top: 0; /* Add space at the top */
+    padding-bottom: 0; /* Optional: also gives breathing room at bottom */
+    height: calc(50vh + 50px); /* Increase height to account for padding */
+    }
+
+
+}
+
+@media (max-width: 770px) {
+    .logo {
+        display: none;
+    }
+
+    .main-nav {
+        justify-content: center;
+    }
+
+    .navbar {
+        padding-right: 0;
+    }
+    .next {
+    right: 40px;
+    }
+
+    .prev {
+    left: 40px;
+    }
+
+    .video-container {
+    grid-template-columns: 1fr;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+    body.no-scroll {
+    overflow: hidden;
+    touch-action: none;
+    }
+    :root {
+    --swiper-navigation-sides-offset: 0;
+    }
+    .landing-page {
+        padding-top: 90px;
+    }
+
+    html {
+        scroll-snap-type:none;
+    }
+
+    .about-nest {
+         padding: 0px 10px 0px 10px;
+    }
+
+    .about-desc {
+        margin-top: -150px;
+    }
+
+    .main-nav {
+        display: none;
+    }
+
+    .portrait-nav {
+        display: flex;
+    }
+
+    .profile-name, .profile-heading {
+        text-align: center;
+    }
+
+
+      .gallery-nest {
+    min-width: unset;
+    }
+
+    .swiper-container {
+    background-color: rgba(0, 255, 255, 0);
+    padding: 0;
+    width: 100%;
+    }
+    
+    .profile-text {
+        padding: 0px 20px 0px 20px;
+    }
+
+    .design-nest {
+    padding: 90px 15px 0px 15px;
+    }
+
+    .tab-buttons {
+    gap: 1rem;
+    }
+
+    .tab-btn {
+    width: 27%;
+    }
+
+    .tab-btn.active {
+    height: 18vh;
+    }
+
+    .carousel-wrapper {
+    width: 100vw;
+    }
+
+    .carousel-container {
+    max-width: 90vw;
+    border-radius: 20px;
+    }
+
+    .carousel-item {
+    height: 50vh;
+    }
+
+      .custom-nav {
+    display: none;
+     }
+
+     #gallery {
+    padding-top: 0;
+    height: 75vh;
+    }
+
+
+    .prev, .next {
+    top: 85%;   
+    position: block;
+    height: 40px;
+    }
+
+    .prev {
+    left: 20px;
+    }   
+
+    .next {
+    right: 20px;
+    }
+
+    svg.btn-carousel {
+    height: 20px;
+    }
+
+    .close-btn {
+    top: 5px;
+    height: 40px;
+    width: 50px;
+    }
+
+    .close-icon {
+    width: 30px;
+    height: 30px;
+    }
+
+    .content-wrapper h2{
+    margin-left: 15px;
+    }
+
+    .content-wrapper button{
+    margin-right: 15px;
+    padding: 10px;
+    }
+
+    .playlist-nest {
+    padding: 10px 5px 0px 5px;
+    }
+
+    .video-container .video-list {
+    height: 350px;
+    }
+
+    .video-container .main-video video {
+        height: auto;
+    }
+
+    .video-container .video-list .vid video {
+    height: 70px;
+    width: 70px;
+    border-radius: 15px;
+    }
+
+    .video-container .video-list .vid {
+    border-radius: 15px;
+    }
+
+    :root {
+        --plyr-control-icon-size:15px;
+    }
+
+    .plyr__volume {
+    width: 90px; /* Default is 60px; increase or decrease as needed */
+    }
+
+    .plyr__volume input[type="range"] {
+    width: 100%; /* ensures it fills the volume container */
+    }
+
+    .plyr__controls .plyr__control[data-plyr="pip"],
+    .plyr__controls .plyr__menu {
+    display: none !important;
+    }
+
+    .contact-info h2 {
+        line-height: 1.5rem;
+    }
+
+    .contact-info .icon-text svg {
+    width: 3rem;
+    height: 3rem;
+    padding: 1rem;
+    }
+
+    .contact-wrapper {
+    margin-top: 70px;
+    }
+}

@@ -490,6 +490,7 @@ input:checked + label.darkmode-landscape svg.moon {
     background-attachment: fixed;
     border-radius: 50px;
     z-index: 1;
+    filter: hue-rotate(var(--img-pfp-overlay));
 }
 
 .resume {
